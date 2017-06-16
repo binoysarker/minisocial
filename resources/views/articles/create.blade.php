@@ -7,7 +7,7 @@
 				<form method="POST" action="{{ url('articles') }}">
 					{{csrf_field()}}
 					<input type="hidden" name="user_id" value="{{Auth::user()->id}} " >
-					<legend>Create a Acticle</legend>
+					<legend>Create an Acticle</legend>
 					<fieldset class="form-group">
 						<label for="content">Content</label>
 						<textarea name="content" id="content" rows="5" class="form-control"></textarea>

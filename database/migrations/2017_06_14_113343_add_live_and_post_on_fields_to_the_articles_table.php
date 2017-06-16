@@ -14,7 +14,7 @@ class AddLiveAndPostOnFieldsToTheArticlesTable extends Migration
     public function up()
     {
         Schema::table('articles', function (Blueprint $table) {
-            $table->boolean('live')->default(0)->after('user_id');
+            $table->boolean('live')->default(false)->after('user_id');
             $table->timestamp('post_on')->nullable()->after('live');
         });
     }
